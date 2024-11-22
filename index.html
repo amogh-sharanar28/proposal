@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposal Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content-wrapper">
+            <h1 class="main-title">Let’s Play a Fun Game!</h1>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="tab1">Question 1</button>
+                <button class="tab-btn" data-tab="tab2">Question 2</button>
+                <button class="tab-btn" data-tab="tab3">Final Question</button>
+                <button class="tab-btn" data-tab="tab4">Surprise!</button>
+            </div>
+
+            <div class="tab-content active" id="tab1">
+                <h2>Do you think we I am Handsome? 💞</h2>
+                <div class="reaction-container">
+                    <button class="option-btn joyful" data-reaction="joyful" data-next="tab2">Absolutely!</button>
+                    <button class="option-btn sad" data-reaction="sad" data-next="tab2">Hmm... Not sure</button>
+                </div>
+                <div class="reaction-animation"></div>
+            </div>
+
+            <div class="tab-content" id="tab2">
+                <h2>If I planned something special for you, would you like it? 🌟</h2>
+                <div class="reaction-container">
+                    <button class="option-btn joyful" data-reaction="joyful" data-next="tab3">Of course, I trust you!</button>
+                    <button class="option-btn sad" data-reaction="sad" data-next="tab3">Maybe, but I’d be nervous!</button>
+                </div>
+                <div class="reaction-animation"></div>
+            </div>
+
+            <div class="tab-content" id="tab3">
+                <h2>This is serious now...</h2>
+                <h3>Will you let me be the reason behind your smiles forever? ❤️</h3>
+                <div class="reaction-container">
+                    <button class="option-btn final-yes" data-next="tab4">Yes</button>
+                    <button class="option-btn final-yes" data-next="tab4">Absolutely Yes!</button>
+                </div>
+            </div>
+
+            <div class="tab-content" id="tab4">
+                <div class="final-animation">
+                    🎇 💕 🎆
+                </div>
+                <div class="balloons">
+                    🎈 🎈 🎈 🎈 🎈
+                </div>
+                <div class="love-letter">
+                    <h2>Dear Cutieee 💕 </h2>
+                    <p>
+                        From the moment I saw you, I am loosing my self in Your eyes. 
+                        You’ve brought joy, love, and magic into my life. You are the dream I always wanted. 
+                        Thank you for being mine. ❤️
+                    </p>
+                    <p>
+                        Always and forever, <br>
+                        I Love U Gundi
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
